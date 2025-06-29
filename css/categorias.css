@@ -1,0 +1,122 @@
+/* Estilos generales para main */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Playfair Display', serif;
+  color: #222;
+}
+
+main h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+/* Grid de productos */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Tarjeta de producto */
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Imagen del producto */
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* Nombre del producto */
+.product-card h2 {
+  font-size: 1.4rem;
+  margin: 10px 0 8px;
+  color: #004080;
+  text-align: center;
+}
+
+/* Descripción */
+.product-card p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* Precio */
+.product-card span {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #e63946;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* Botón */
+.product-card button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 220px;
+}
+
+.product-card button:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  main h1 {
+    font-size: 2.2rem;
+  }
+
+  .product-card button {
+    max-width: 100%;
+  }
+}
+
+/* Custom styles for Playfair Display font and general body font */
+body {
+font-family: 'Inter', sans-serif;
+background-color: #f8f8f8; /* Light gray background */
+}
+#btn-ir-pagar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  border: none;
+  text-align: center;
+}
