@@ -27,7 +27,7 @@ include 'includes/header.php';
         <div class="slide"><img src="img/portada4.webp" alt="Portada 4" /></div>
     </div>
     <div class="hero-button">
-        <a href="#ofertas" class="cta-btn">EMPIEZA YAa ➜</a>
+        <a href="#ofertas" class="cta-btn">EMPIEZA YAo ➜</a>
     </div>
 </section>
 
